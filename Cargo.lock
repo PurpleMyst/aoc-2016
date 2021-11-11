@@ -8,6 +8,8 @@ version = "1.0.0"
 dependencies = [
  "criterion",
  "day01",
+ "day02",
+ "day03",
 ]
 
 [[package]]
@@ -181,6 +183,14 @@ dependencies = [
 
 [[package]]
 name = "day01"
+version = "0.1.0"
+
+[[package]]
+name = "day02"
+version = "0.1.0"
+
+[[package]]
+name = "day03"
 version = "0.1.0"
 
 [[package]]
