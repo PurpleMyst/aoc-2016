@@ -31,4 +31,5 @@ doit!(
     day02,
     day03,
     day05,
+    day09,
 );

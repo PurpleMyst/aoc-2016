@@ -20,7 +20,17 @@ dependencies = [
  "day02",
  "day03",
  "day05",
+ "day09",
  "iai",
+]
+
+[[package]]
+name = "atoi"
+version = "2.0.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "f28d99ec8bfea296261ca1af174f24225171fea9664ba9003cbebee704810528"
+dependencies = [
+ "num-traits",
 ]
 
 [[package]]
@@ -174,6 +184,13 @@ name = "day05"
 version = "0.1.0"
 dependencies = [
  "md5",
+]
+
+[[package]]
+name = "day09"
+version = "0.1.0"
+dependencies = [
+ "atoi",
 ]
 
 [[package]]
