@@ -122,6 +122,7 @@ def refetch_inputs() -> None:
 @arg("-d", "--day", choices=DAYS_LEFT, default=min(DAYS_LEFT, default=0), required=False)
 @aliases("ss")
 @wrap_errors((requests.HTTPError,))
+@in_root_dir
 def start_solve(day: int = min(DAYS_LEFT, default=0)) -> None:
     "Start solving a day, by default today."
     crate = f"day{day:02}"

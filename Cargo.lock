@@ -26,6 +26,7 @@ dependencies = [
  "day12",
  "day13",
  "day14",
+ "day15",
  "iai",
 ]
 
@@ -240,6 +241,13 @@ version = "0.1.0"
 dependencies = [
  "md5",
  "rayon",
+]
+
+[[package]]
+name = "day15"
+version = "0.1.0"
+dependencies = [
+ "ring-algorithm",
 ]
 
 [[package]]
@@ -496,6 +504,15 @@ name = "regex-syntax"
 version = "0.8.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "2b15c43186be67a4fd63bee50d0303afffcef381492ebe2c5d87f324e1b8815c"
+
+[[package]]
+name = "ring-algorithm"
+version = "0.8.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "1e7a0ad57623ce306fe34b975618445cbcf998e60ab576cc11497f51a6c97f97"
+dependencies = [
+ "num-traits",
+]
 
 [[package]]
 name = "rustc-hash"
