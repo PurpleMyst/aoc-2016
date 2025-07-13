@@ -1,6 +1,6 @@
 [workspace]
 resolver = "2"
-members = [ "benchmark", "day01", "day02", "day03", "day05", "day09", "day10", "day11", "day12", "day13", "day14", "day15", "day16", "day17", "day18"]
+members = [ "benchmark", "day01", "day02", "day03", "day05", "day09", "day10", "day11", "day12", "day13", "day14", "day15", "day16", "day17", "day18", "day19"]
 
 [workspace.metadata]
 year = 2016
@@ -39,3 +39,6 @@ completion_time = 2025-07-13T21:01:13.965683
 [workspace.metadata.day18]
 start_time = 2025-07-13T21:02:54.513244
 completion_time = 2025-07-13T21:09:39.487805
+
+[workspace.metadata.day19]
+start_time = 2025-07-13T21:11:20.550004
