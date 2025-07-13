@@ -28,6 +28,7 @@ dependencies = [
  "day14",
  "day15",
  "day16",
+ "day17",
  "iai",
 ]
 
@@ -254,6 +255,15 @@ dependencies = [
 [[package]]
 name = "day16"
 version = "0.1.0"
+
+[[package]]
+name = "day17"
+version = "0.1.0"
+dependencies = [
+ "arrayvec",
+ "md5",
+ "pathfinding",
+]
 
 [[package]]
 name = "deprecate-until"
