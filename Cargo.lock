@@ -23,6 +23,7 @@ dependencies = [
  "day09",
  "day10",
  "day11",
+ "day12",
  "iai",
 ]
 
@@ -206,6 +207,13 @@ dependencies = [
  "pathfinding",
  "regex",
  "rustc-hash",
+]
+
+[[package]]
+name = "day12"
+version = "0.1.0"
+dependencies = [
+ "atoi",
 ]
 
 [[package]]
