@@ -5,13 +5,21 @@ authors = ["PurpleMyst <PurpleMyst@users.noreply.github.com>"]
 edition = "2018"
 
 [dependencies]
-day01 = { path = "../day01" }
-day02 = { path = "../day02" }
-day03 = { path = "../day03" }
+day01 = { version = "0.1.0", path = "../day01" }
+day02 = { version = "0.1.0", path = "../day02" }
+day03 = { version = "0.1.0", path = "../day03" }
 
 [dev-dependencies]
-criterion = "0.3"
+criterion = { version = "0.3", features = ["html_reports"] }
+iai = "0.1"
 
 [[bench]]
-name = "benchmark"
+name = "criterion"
 harness = false
+
+[[bench]]
+name = "iai"
+harness = false
+
+[lib]
+bench = false
