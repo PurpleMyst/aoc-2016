@@ -1,0 +1,10 @@
+[package]
+name = "day13"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+arrayvec = "0.7.6"
+atoi = "2.0.0"
+pathfinding = "4.14.0"
+rustc-hash = "2.1.1"

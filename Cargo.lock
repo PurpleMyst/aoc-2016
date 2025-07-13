@@ -24,8 +24,15 @@ dependencies = [
  "day10",
  "day11",
  "day12",
+ "day13",
  "iai",
 ]
+
+[[package]]
+name = "arrayvec"
+version = "0.7.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "7c02d123df017efcdfbd739ef81735b36c5ba83ec3c59c80a9d7ecc718f92e50"
 
 [[package]]
 name = "atoi"
@@ -214,6 +221,16 @@ name = "day12"
 version = "0.1.0"
 dependencies = [
  "atoi",
+]
+
+[[package]]
+name = "day13"
+version = "0.1.0"
+dependencies = [
+ "arrayvec",
+ "atoi",
+ "pathfinding",
+ "rustc-hash",
 ]
 
 [[package]]
