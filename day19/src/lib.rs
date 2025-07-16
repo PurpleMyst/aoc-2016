@@ -1,9 +1,17 @@
 use std::{collections::VecDeque, fmt::Display};
 
-fn step(n: &mut VecDeque<u32>) {
-    n.remove(n.len() / 2);
-    let Some(m) = n.pop_front() else { unsafe { std::hint::unreachable_unchecked() } };
-    n.push_back(m);
+// https://www.reddit.com/r/adventofcode/comments/5j4lp1/2016_day_19_solutions/dbdf9mn/
+fn step(left: &mut VecDeque<u32>, right: &mut VecDeque<u32>) {
+    if left.len() > right.len() {
+        left.pop_back();
+    } else {
+        right.pop_back();
+    }
+
+    unsafe {
+        right.push_front(left.pop_front().unwrap_unchecked());
+        left.push_back(right.pop_back().unwrap_unchecked());
+    }
 }
 
 #[inline]
@@ -13,13 +21,12 @@ pub fn solve() -> (impl Display, impl Display) {
     let l = n - (1 << (32 - n.leading_zeros() - 1));
     let part1 = 2 * l + 1;
 
-    let mut xs: VecDeque<u32> = (1..=n).collect();
-    let mut pbar = tqdm::pbar(Some(n as usize - 1));
+    let mut left: VecDeque<u32> = (1..=n / 2).collect();
+    let mut right: VecDeque<u32> = (n/2 + 1..=n).rev().collect();
     for _ in 0..(n - 1) {
-        step(&mut xs);
-        pbar.update(1).unwrap();
+        step(&mut left, &mut right);
     }
-    let part2 = xs[0];
+    let part2 = left.pop_front().unwrap();
 
     (part1, part2)
 }
